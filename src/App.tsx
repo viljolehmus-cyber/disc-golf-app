@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import {
-  BrowserRouter,
+  HashRouter,
   Navigate,
   Outlet,
   Route,
@@ -90,11 +90,11 @@ function Router() {
 export default function App() {
   return (
     <AppProvider>
-      <BrowserRouter>
+      <HashRouter>
         <ScrollToTop />
         <Router />
         <Toast />
-      </BrowserRouter>
+      </HashRouter>
     </AppProvider>
   );
 }

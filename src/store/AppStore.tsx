@@ -263,7 +263,8 @@ export function AppProvider({ children }: { children: ReactNode }) {
 
   const resetDemoData = useCallback(() => {
     storage.clearAll();
-    window.location.href = "/";
+    window.location.hash = "#/";
+    window.location.reload();
   }, []);
 
   const showToast = useCallback((msg: string) => {

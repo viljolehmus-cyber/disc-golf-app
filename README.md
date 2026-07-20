@@ -19,6 +19,19 @@ Sign in with either button (login is simulated) and you land in the app with
 15 historical rounds, favorites, a social feed and two tournaments already
 seeded.
 
+## GitHub Pages
+
+Every push to the default branch builds and deploys the app to GitHub Pages
+via `.github/workflows/deploy.yml` (no configuration needed — the workflow
+enables Pages on first run). The site appears at:
+
+```
+https://<your-username>.github.io/disc-golf-app/
+```
+
+The build uses a relative asset base and hash-based routing, so it works from
+any hosting path without server-side rewrites.
+
 ## What's inside
 
 **Fully functional**
